@@ -1,0 +1,17 @@
+{
+    "name": "saintxak/parser",
+    "description": "Тестовое задание",
+    "type": "library",
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Viktor",
+            "email": "viktor.bryntsev@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+        "psr-4": {"saintxak\\": "/src"}
+    }
+}
