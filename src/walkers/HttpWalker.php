@@ -40,4 +40,12 @@ class HttpWalker extends AWalker{
         return false;
     }
 
+    public function setUrl($url){
+        parent::setUrl($url);
+        $curr_url = parse_url($this->defaultUrl);
+
+        if (!isset($curr_url['scheme']))
+            $this->defaultUrl = 'http://'.$this->defaultUrl;
+    }
+
 }
